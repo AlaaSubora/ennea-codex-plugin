@@ -1,0 +1,12 @@
+interface:
+  display_name: "Setup"
+  short_description: "Check your Ennea workspace and available operations"
+  default_prompt: "Use $setup to check my connected Ennea workspace and available operations."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ennea"
+      description: "Ennea manufacturing operations"
+      transport: "streamable_http"
+      url: "https://api.ennea-ai.com/mcp"

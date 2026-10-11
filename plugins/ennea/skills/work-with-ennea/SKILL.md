@@ -7,6 +7,14 @@ Discover the destination with `ennea_context` and the relevant
 `ennea_capabilities`. Use returned schemas and permissions; do not assume all
 manufacturing entities or operational lifecycles are supported.
 
+If Ennea tools are not listed, use the harness's tool search when available.
+If discovery still exposes no tools, report the host loading problem, check that
+the plugin is enabled, and start a new chat with Ennea selected. Do not infer an
+OAuth failure from missing tools or repeatedly ask the user to reconnect. Use
+the host's browser sign-in and consent flow only when an actual connection or
+tool response reports authentication required, such as HTTP 401. Do not request
+credentials in chat or replace the plugin with a CLI installation.
+
 Use `ennea_query` for existing records and follow pagination. A bounded page is
 not a complete inventory. Reconcile existing IDs before updating or deleting.
 

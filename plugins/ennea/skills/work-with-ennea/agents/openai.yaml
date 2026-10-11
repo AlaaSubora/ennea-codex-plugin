@@ -1,0 +1,12 @@
+interface:
+  display_name: "Work with Ennea"
+  short_description: "Prepare manufacturing changes for review in Ennea"
+  default_prompt: "Use $work-with-ennea to prepare manufacturing changes for review in Ennea."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "ennea"
+      description: "Ennea manufacturing operations"
+      transport: "streamable_http"
+      url: "https://api.ennea-ai.com/mcp"
