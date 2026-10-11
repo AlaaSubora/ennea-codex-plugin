@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ennea",
+  "version": "1.2.0",
+  "description": "Explore your Ennea workspace and prepare manufacturing changes for review.",
+  "author": {
+    "name": "Ennea",
+    "url": "https://www.ennea-ai.com/"
+  },
+  "homepage": "https://www.ennea-ai.com/",
+  "repository": "https://github.com/AlaaSubora/ennea-codex-plugin",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "publication": {
+        "translations": {
+          "de-DE": {
+            "subtitle": "Arbeite mit deiner Fertigung",
+            "description": "Erkunde deinen Ennea-Arbeitsbereich, bereite einzelne Änderungen oder ganze Pakete vor und prüfe die Ergebnisse. Dein Agent verarbeitet Quelldaten in seiner eigenen Umgebung."
+          }
+        }
+      },
+      "interface": {
+        "displayName": "Ennea",
+        "shortDescription": "Work with your factory",
+        "longDescription": "Explore your Ennea workspace, prepare individual or batch changes, and review their results. Your agent interprets source data in its own environment.",
+        "developerName": "Ennea",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.ennea-ai.com/",
+        "supportURL": "https://www.ennea-ai.com/faq/",
+        "privacyPolicyURL": "https://www.ennea-ai.com/privacy/",
+        "termsOfServiceURL": "https://www.ennea-ai.com/terms/",
+        "composerIcon": "./assets/logo_single.png",
+        "logo": "./assets/logo_single.png",
+        "defaultPrompt": [
+          "Show what I can work with in Ennea.",
+          "Prepare manufacturing changes for review in Ennea."
+        ]
+      }
+    }
+  }
+}

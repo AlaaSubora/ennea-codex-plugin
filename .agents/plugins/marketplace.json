@@ -1,0 +1,20 @@
+{
+  "name": "ennea",
+  "interface": {
+    "displayName": "Ennea"
+  },
+  "plugins": [
+    {
+      "name": "ennea",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ennea"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

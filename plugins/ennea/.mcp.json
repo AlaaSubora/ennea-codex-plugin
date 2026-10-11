@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "ennea": {
+      "type": "http",
+      "url": "https://api.ennea-ai.com/mcp",
+      "oauth_resource": "https://api.ennea-ai.com/mcp",
+      "scopes": [
+        "ennea:read",
+        "ennea:prepare",
+        "ennea:stage",
+        "ennea:apply"
+      ],
+      "oauth": {
+        "clientId": "ennea-codex"
+      }
+    }
+  }
+}

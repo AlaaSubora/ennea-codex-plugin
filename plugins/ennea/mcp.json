@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "ennea": {
+      "type": "streamable-http",
+      "url": "https://api.ennea-ai.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "resource": "https://api.ennea-ai.com/mcp",
+            "baseScopes": [
+              "ennea:read"
+            ],
+            "defaultScopes": [
+              "ennea:read",
+              "ennea:prepare",
+              "ennea:stage",
+              "ennea:apply"
+            ],
+            "client": {
+              "mode": "provided",
+              "clientId": "ennea-codex",
+              "tokenEndpointAuthMethod": "none"
+            }
+          }
+        }
+      }
+    }
+  }
+}
